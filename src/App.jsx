@@ -1,4 +1,4 @@
-import './styles/global.css'
+import '../src/styles/global.scss'
 
 function App() {
     return <h1>teste </h1>
