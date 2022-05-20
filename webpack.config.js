@@ -2,6 +2,8 @@ const { relative } = require('path')
 const path = require('path')
 const htmlWebpackPlugin = require('html-webpack-plugin')
 
+const  isDevelopment = process.env.NODE_ENV !== 'production'
+
 module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.jsx'),
   output: {
@@ -11,8 +13,8 @@ module.exports = {
   stats: {
     warnings: false
   },
-  mode: 'development',
-  devtool: 'eval-source-map',
+  mode: isDevelopment ? 'development' : 'production',
+  devtool: isDevelopment ?'eval-source-map' : 'source-map',
   
   resolve: {
     extensions: ['.js', '.jsx'],
