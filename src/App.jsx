@@ -1,6 +1,4 @@
 function App() {
-    return <h1>teste hedawdadawdwddefault</h1>
+    return <h1>teste </h1>
 }
 export default App
-
-dddddawdawd

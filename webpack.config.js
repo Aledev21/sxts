@@ -12,6 +12,7 @@ module.exports = {
     warnings: false
   },
   mode: 'development',
+  devtool: 'eval-source-map',
   
   resolve: {
     extensions: ['.js', '.jsx'],
