@@ -8,9 +8,16 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
+  stats: {
+    warnings: false
+  },
+  mode: 'development',
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+  devServer: {
+    static: path.resolve(__dirname, 'public'),
+   },
   plugins:  [
     new htmlWebpackPlugin({ template:   path.resolve(__dirname, 'public', 'index.html') })
   ],
